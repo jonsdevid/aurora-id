@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Aurora Ecommerce</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Baumans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .login-container {
+            background: #fff;
+            padding: 2.5rem 2rem 2rem 2rem;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(60, 60, 60, 0.15);
+            width: 350px;
+            max-width: 90vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+        .exit-btn {
+            position: absolute;
+            top: 16px;
+            right: 18px;
+            background: transparent;
+            border: none;
+            font-size: 1.3rem;
+            color: #fda085;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+        .exit-btn:hover {
+            color: #f44336;
+        }
+        .login-logo {
+            width: 80px;
+            margin-bottom: 1.2rem;
+        }
+        .login-title {
+            font-family: 'Baumans', cursive;
+            font-size: 2rem;
+            color: #fda085;
+            margin-bottom: 1.5rem;
+            letter-spacing: 1px;
+        }
+        .login-form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .login-form label {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 0.3rem;
+            margin-top: 1rem;
+        }
+        .login-form input {
+            padding: 0.7rem;
+            border: 1px solid #fda085;
+            border-radius: 6px;
+            font-size: 1rem;
+            outline: none;
+            transition: border 0.2s;
+        }
+        .login-form input:focus {
+            border: 1.5px solid #f6d365;
+        }
+        .login-form .login-btn {
+            margin-top: 1.5rem;
+            padding: 0.8rem;
+            background: linear-gradient(90deg, #fda085 60%, #f6d365 100%);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-family: 'Baumans', cursive;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .login-form .login-btn:hover {
+            background: linear-gradient(90deg, #f6d365 60%, #fda085 100%);
+        }
+        .login-links {
+            margin-top: 1.2rem;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.95rem;
+        }
+        .login-links a {
+            color: #fda085;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .login-links a:hover {
+            color: #f6d365;
+            text-decoration: underline;
+        }
+        @media (max-width: 400px) {
+            .login-container {
+                padding: 1.2rem 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <button class="exit-btn" onclick="window.location.href='../index.html'" title="Exit">&times;</button>
+        <div class="login-title">Aurora Login</div>
+        <form class="login-form" autocomplete="off">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+        <div class="login-links">
+            <a href="forgot.html">Forgot Password?</a>
+            <a href="create account.html">Create Account</a>
+        </div>
+    </div>
+</body>
+</html>

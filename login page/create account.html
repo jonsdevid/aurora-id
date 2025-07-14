@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | Aurora Ecommerce</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Baumans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .register-container {
+            background: #fff;
+            padding: 2.5rem 2rem 2rem 2rem;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(60, 60, 60, 0.15);
+            width: 370px;
+            max-width: 95vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .register-logo {
+            width: 80px;
+            margin-bottom: 1.2rem;
+        }
+        .register-title {
+            font-family: 'Baumans', cursive;
+            font-size: 2rem;
+            color: #fda085;
+            margin-bottom: 1.5rem;
+            letter-spacing: 1px;
+        }
+        .register-form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .register-form label {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 0.3rem;
+            margin-top: 1rem;
+        }
+        .register-form input {
+            padding: 0.7rem;
+            border: 1px solid #fda085;
+            border-radius: 6px;
+            font-size: 1rem;
+            outline: none;
+            transition: border 0.2s;
+        }
+        .register-form input:focus {
+            border: 1.5px solid #f6d365;
+        }
+        .register-form .register-btn {
+            margin-top: 1.5rem;
+            padding: 0.8rem;
+            background: linear-gradient(90deg, #fda085 60%, #f6d365 100%);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-family: 'Baumans', cursive;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .register-form .register-btn:hover {
+            background: linear-gradient(90deg, #f6d365 60%, #fda085 100%);
+        }
+        .register-links {
+            margin-top: 1.2rem;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            font-size: 0.95rem;
+        }
+        .register-links a {
+            color: #fda085;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .register-links a:hover {
+            color: #f6d365;
+            text-decoration: underline;
+        }
+        @media (max-width: 400px) {
+            .register-container {
+                padding: 1.2rem 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <div class="register-title">Create Account</div>
+        <form class="register-form" autocomplete="off">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Create a password" required>
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+            <button type="submit" class="register-btn">Create Account</button>
+        </form>
+        <div class="register-links">
+            <span>Already have an account? <a href="login.html">Login</a></span>
+        </div>
+    </div>
+</body>

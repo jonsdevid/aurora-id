@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password | Aurora Ecommerce</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Baumans&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Playfair Display', serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .forgot-container {
+            background: #fff;
+            padding: 2.5rem 2rem 2rem 2rem;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(60, 60, 60, 0.15);
+            width: 350px;
+            max-width: 90vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .forgot-logo {
+            width: 80px;
+            margin-bottom: 1.2rem;
+        }
+        .forgot-title {
+            font-family: 'Baumans', cursive;
+            font-size: 2rem;
+            color: #fda085;
+            margin-bottom: 1.2rem;
+            letter-spacing: 1px;
+        }
+        .forgot-form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .forgot-form label {
+            font-size: 1rem;
+            color: #333;
+            margin-bottom: 0.3rem;
+            margin-top: 1rem;
+        }
+        .forgot-form input {
+            padding: 0.7rem;
+            border: 1px solid #fda085;
+            border-radius: 6px;
+            font-size: 1rem;
+            outline: none;
+            transition: border 0.2s;
+        }
+        .forgot-form input:focus {
+            border: 1.5px solid #f6d365;
+        }
+        .forgot-form .forgot-btn {
+            margin-top: 1.5rem;
+            padding: 0.8rem;
+            background: linear-gradient(90deg, #fda085 60%, #f6d365 100%);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-family: 'Baumans', cursive;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .forgot-form .forgot-btn:hover {
+            background: linear-gradient(90deg, #f6d365 60%, #fda085 100%);
+        }
+        .forgot-links {
+            margin-top: 1.2rem;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            font-size: 0.95rem;
+        }
+        .forgot-links a {
+            color: #fda085;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .forgot-links a:hover {
+            color: #f6d365;
+            text-decoration: underline;
+        }
+        @media (max-width: 400px) {
+            .forgot-container {
+                padding: 1.2rem 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="forgot-container">
+        <div class="forgot-title">Forgot Password</div>
+        <form class="forgot-form" autocomplete="off">
+            <label for="email">Enter your email address</label>
+            <input type="email" id="email" placeholder="Your registered email" required>
+            <button type="submit" class="forgot-btn">Send Reset Link</button>
+        </form>
+        <div class="forgot-links">
+            <a href="login.html">Back to Login</a>
+        </div>
+    </div>
+</body>
+</html>
