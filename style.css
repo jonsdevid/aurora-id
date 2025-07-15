@@ -19,6 +19,12 @@
   font-style: normal;
 }
 
+.saira-stencil-one-regular {
+  font-family: "Saira Stencil One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 /* Importing Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700;800;900&display=swap");
@@ -159,7 +165,16 @@ body {
   padding-bottom: 10px;
 }  
 #hero h1 {
+  margin-top: 10px;
   color: #d2b68a;
+  font-size: 80px;
+  font-family: "Saira Stencil One", sans-serif;
+}
+
+#hero p {
+  font-size: 20px;
+  color: #465b52;
+  padding: 10px 0;
 }
 #hero button{
   background-image: url("img/button.png");
@@ -433,6 +448,8 @@ footer .copyright {
 
 
 /* single product styles */
+
+
 #prodetails {
   display: flex;
   margin-top: 20px;
@@ -443,6 +460,21 @@ footer .copyright {
   width: 40%;
   margin-right: 50px;
 }
+
+#MainImg {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  border: 1px solid #d2b68a;
+}
+
+#Mainimg2 {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  border: 1px solid #d2b68a;
+}
+
 
 .small-img-group {
   display: flex;
@@ -460,15 +492,20 @@ footer .copyright {
   border-radius: 30px;
 }
 
+#prodetails .single-pro-detail img {
+  border-radius: 20px;
+}
+
 #prodetails .single-pro-details h4 {
-  padding: 30px 0 20px 0;
+  padding: 20px 0 10px 0;
 }
 
 #prodetails .single-pro-details h2 {
   font-size: 26px;
+  padding-bottom: 10px;
 }
 #prodetails .single-pro-details h6 {
-  font-size: 14px;
+  font-size: 18px;
   padding-top: 15px;
 }
 
@@ -476,7 +513,7 @@ footer .copyright {
   display: block;
   padding: 5px 10px;
   border-radius: 5px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 #prodetails .single-pro-details input {
